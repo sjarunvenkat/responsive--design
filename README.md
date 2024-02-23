@@ -1,14 +1,9 @@
-# amazon-clone-boilerplate
+# Responsive-design-amazon-clone
 
-## Here is the expected output
+## Here is the desktop version
 
-![](https://github.com/Kalvium-Program/amazon-clone-boilerplate/blob/main/assets/Amazon%20home%20UI.png?raw=true)
+![](https://github.com/sjarunvenkat/responsive--design/blob/main/amazon%20clone%20desktop.png)
 
-Fork this repo and get started with the cloning project.
+## Here is the mobile version
 
-## Additional details:
-Use color picker extensions link [colorpick-eyedropper](https://chrome.google.com/webstore/detail/colorpick-eyedropper/) in Google chrome to get the exact colors used in the webpage.
-
-The font used: Cabin
-
-If you need more icons you can visit [flaticons.com](https://www.flaticon.com/)
+![](https://github.com/sjarunvenkat/responsive--design/blob/main/mobile%20version.png)
