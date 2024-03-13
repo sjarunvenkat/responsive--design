@@ -1,4 +1,9 @@
-# Responsive-design-amazon-clone
+# # Responsive-design-amazon-clone (NEW)
+index2.html and styles2.css
+
+![](https://github.com/sjarunvenkat/responsive--design/blob/main/responsive%20output.gif)
+
+# Responsive-design-amazon-clone (OLD)
 
 ## Here is the desktop version
 
