@@ -1,175 +1,165 @@
-*{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.topbar #location img{
-    width: 2rem;
-    height: 2rem;
+.topbar #location img {
+  width: 2rem;
+  height: 2rem;
 }
 
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
-.topbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    background-color: #121921;
-    color: white;
-    height: 5rem;
-    
+  background-color: #121921;
+  color: white;
+  height: 5rem;
 }
 
-.topbar-mobile{
+.topbar-mobile {
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+
+  background-color: #121921;
+  color: white;
+  height: 4rem;
+}
+
+.topbar #search {
+  width: 70rem;
+  height: 3rem;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #243040;
+  color: white;
+  height: 3rem;
+  font-size: 1.1rem;
+}
+
+.nav-bar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-bar li {
+  list-style: none;
+}
+
+.nav-bar li {
+  text-decoration: none;
+  padding: 2rem;
+  display: block;
+}
+
+.nav-bar li:hover {
+  background-color: #555;
+}
+
+.nav-bar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.misc li {
+  list-style: none;
+}
+
+.misc li a {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.misc li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: relative;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.banner {
+  display: flex;
+}
+
+.showcase {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+
+  column-gap: 1em;
+
+  margin: 30px;
+  flex-flow: column-wrap;
+  background-color: white;
+  top: 500px;
+  justify-content: space-between;
+}
+
+.showcase #signinbox {
+  text-align: center;
+  height: 40px;
+  width: 360px;
+  background-color: #fed813;
+}
+
+@media (max-width: 850px) {
+  .topbar {
     display: none;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    background-color: #121921;
-    color: white;
-    height: 4rem;
-    
-}
+  }
 
-
-
-
-.topbar #search{
-    width: 70rem;
-    height: 3rem;
-    background-color: white;
-    margin-top: 10px;
-}
-
-.categories{
+  .topbar-mobile {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    background-color: #243040;
-    color: white;   
-    height: 3rem;   
-    font-size: 1.1rem;
-}
+  }
 
-.nav-bar ul{
-    margin: 0;
-    padding: 0;
-    display: flex;  
-}
-
-.nav-bar li{
-    list-style: none;
-}
-
-.nav-bar li a{
-    text-decoration: none;
-    padding: 2rem;
-    display: block;
-}
-
-.nav-bar li:hover{
-    background-color: #555;
-}
-
-.nav-bar ul{
-    margin: 0;
-    padding: 0;
+  .toggle-button {
     display: flex;
-    justify-content: space-around;
-}
+  }
 
-.misc li{
-    list-style: none;
-}
-
-.misc li a{
-    text-decoration: none;
-    padding: 1rem;
-    display: block;
-}
-
-.misc li:hover{
-    background-color: #555;
-}
-
-.toggle-button{
-    position: relative;
-    top: .75rem;
-    right: 1rem;
+  .nav-bar {
     display: none;
+  }
+
+  .banner #centre img {
+    width: 500px;
+  }
+
+  .misc {
+    display: none;
+  }
+
+  .showcase {
     flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.banner{
-    display: flex;
-    ;
-}
-
-.showcase{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-
-    column-gap: 1em;
-
-    margin: 30px;
-    flex-flow: column-wrap;
-    background-color: white;
-    top: 500px;
-    justify-content: space-between;
-}
-
-
-.showcase #signinbox{
-    text-align: center;
-    height: 40px;
-    width: 360px;
-    background-color: #fed813;
-}
-
-
-@media (max-width:500px) {
-    .topbar{
-        display: none;
-    }
-
-    .topbar-mobile{
-        display: flex;
-    }
-    
-    .toggle-button{
-        display: flex;
-    }
-
-    .nav-bar{
-        display: none;
-    }
-
-    .banner #centre img{
-        width:500px;
-    }
-
-    .misc{
-        display: none;
-    }
-
-    .showcase{
-        flex-direction: column;
-    }
+  }
 }
